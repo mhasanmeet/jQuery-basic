@@ -25,7 +25,6 @@
 
 Examples 
 
-    ```
     $("#test").css("color", "green")
     $(".test").css("border", "2px dotted red")
     $("*").css("border", "3px solid red")
@@ -33,7 +32,6 @@ Examples
     $("ul li:eq(3)").css("color", "green")
     $("ul li:gt(1)").css("color", "red")
     $("ul li:lt(3)").css("color", "red")
-    ```
 
 2. Mouse click Event, Examples
 
