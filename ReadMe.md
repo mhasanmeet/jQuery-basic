@@ -6,8 +6,8 @@
 * Start with or without Jquery Starter Code
     
  >   $(document).ready(function({
-        ====code in here====
-    }))
+ >       ====code in here====
+ >   }))
 
 --> $("id/class/selector").css("css property", "value")
 
