@@ -2,10 +2,10 @@
 
 ## Rules  
 
---> Need to include Jquery file or CDN in HTML
---> Start with or without Jquery Starter Code
+* Need to include Jquery file or CDN in HTML
+* Start with or without Jquery Starter Code
     
-    $(document).ready(function({
+ >   $(document).ready(function({
         ====code in here====
     }))
 
