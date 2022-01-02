@@ -5,15 +5,15 @@
 * Need to include Jquery file or CDN in HTML
 * Start with or without Jquery Starter Code
     
- >   $(document).ready(function({
- >       ====code in here====
- >   }))
+    $(document).ready(function(){
+        ====code in here====
+    })
 
---> $("id/class/selector").css("css property", "value")
+* $("id/class/selector").css("css property", "value")
 
     $("#test").css("color", "green")
 
---> can select multiple id/class, Example
+* can select multiple id/class, Example
 
     $("#id, .id, #id ...").css("color", "green")
 
@@ -21,8 +21,7 @@
 
 1. css Styling
 
-
-Examples--> 
+Examples 
 
 * $("#test").css("color", "green")
 * $(".test").css("border", "2px dotted red")
@@ -34,49 +33,51 @@ Examples-->
 
 2. Mouse click Event, Examples
 
---> click Event
+* click Event
 
 $("#box").click(function(){
-        $("#box").css("background-color", "blue")
-    })
+        $("#box").css("background-color", "blue");
+        })
 
---> Double Click Event Example
+* Double Click Event Example
 
     $("#box").dblclick(function(){
-        $("#box").css("background-color", "skyblue")
-    })
+        $("#box").css("background-color", "skyblue");
+        })
 
---> Contextmenu, Mouse Right click event
+* Contextmenu, Mouse Right click event
 
     $("#box").contextmenu(function(){
-        $("#box").css("background-color", "skyblue")
-    })
+        $("#box").css("background-color", "skyblue");
+        })
 
---> Other(s): mouseenter (when mouse enter into event area)
+* Other(s): mouseenter (when mouse enter into event area)
 
 3. Keyboard Event
 
---> Keypress, any key press event
+* Keypress, any key press event
 
     $("body").keypress(function(){
-        $(this).css("background-color", "green")
-    })
+        $(this).css("background-color", "green");
+        })
 
---> other(s):  keyup, keydown
+* other(s):  keyup, keydown
 
 4. Form Event
 
---> focus, focus the area and content
+* focus, focus the area and content
 
     $("#name").focus(function(){
         $(this).css("background-color", "green");
+        })
 
---> change, Live value update
+* change, Live value update
 
     $(".country").change(function(){
         var a = $(this).val()
         $("#input").html(a);
+        })
 
---> other(s): Blur
+* other(s): Blur
 
 5. Window Event
