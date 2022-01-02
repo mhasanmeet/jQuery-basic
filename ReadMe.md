@@ -17,6 +17,7 @@
 
     $("#id, .id, #id ...").css("color", "green")
 
+## Jquery examples and documentation
 
 1. css Styling
 
