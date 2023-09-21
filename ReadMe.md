@@ -1,97 +1,51 @@
-# JQuey
+## Jquery
 
-## Rules  
+## Jquery library added
 
-* Need to include Jquery file or CDN in HTML
-* Start with or without Jquery Starter Code
-    
-    ```
-    $(document).ready(function(){
-        ====code in here====
+* CDN - `<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>`
+* Or download library from [Jquery](https://jquery.com/download/)
+* The library must be add in header section of the html
+
+## Documentation
+
+Read details API doc [API Doc](https://api.jquery.com/)
+
+## Starter Code sample
+
+```html
+
+<div>hello</div>
+```
+
+```js
+
+$(document).ready(function(){
+    $('div').click(function(){
+        alert('jquery has been loaded')
     })
-    ```
+});
+```
 
-* $("id/class/selector").css("css property", "value")
+## Some Basic Rules 
 
-    `$("#test").css("color", "green")`
+* DOM click event - `$('DOM').click(function(){});`
+* DOM insert HTML - `$('DOM).html('text');`
+* DOM multiple DOM inset `$('div, span, p, a').html('text');`
+* Select DOM Id and return HTML - `$('#id').html('Hello World');`
+* Hide DOM by a html class- `$('.class').hide();`
+* Add css in child DOM - `$('#docs>p').css('color', 'red');`
+* Add class to DOM element - `$('.elm').addClass('green');`
+* Add class to anchor tag - `$('a[href="google.com"]').addClass('blue');`
 
-* can select multiple id/class, Example
+## Jquery Deep Dive API
 
-    `$("#id, .id, #id ...").css("color", "green")`
+* Append DOM
+* toggleClass
+* mouseover, mouseleave
+* fadeout
+* animate
 
-## Jquery examples and documentation
+## Go beyond 
 
-1. css Styling
-
-Examples 
-
-    $("#test").css("color", "green")
-    $(".test").css("border", "2px dotted red")
-    $("*").css("border", "3px solid red")
-    $("li:first-child").css("color", "green")
-    $("ul li:eq(3)").css("color", "green")
-    $("ul li:gt(1)").css("color", "red")
-    $("ul li:lt(3)").css("color", "red")
-
-2. Mouse click Event, Examples
-
-* click Event
-
-    ```
-    $("#box").click(function(){
-        $("#box").css("background-color", "blue");
-        })
-    ```
-
-* Double Click Event Example
-
-    ```
-    $("#box").dblclick(function(){
-        $("#box").css("background-color", "skyblue");
-        })
-    ```
-
-* Contextmenu, Mouse Right click event
-
-    ```
-    $("#box").contextmenu(function(){
-        $("#box").css("background-color", "skyblue");
-        })
-    ```
-
-* Other(s): mouseenter (when mouse enter into event area)
-
-3. Keyboard Event
-
-* Keypress, any key press event
-
-    ```
-    $("body").keypress(function(){
-        $(this).css("background-color", "green");
-        })
-    ```
-
-* other(s):  keyup, keydown
-
-4. Form Event
-
-* focus, focus the area and content
-
-    ```
-    $("#name").focus(function(){
-        $(this).css("background-color", "green");
-        })
-    ```
-
-* change, Live value update
-
-    ```
-    $(".country").change(function(){
-        var a = $(this).val()
-        $("#input").html(a);
-        })
-    ```
-
-* other(s): Blur
-
-5. Window Event
+* Ajax
+* Json
